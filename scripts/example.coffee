@@ -12,6 +12,9 @@ module.exports = (robot) ->
 
   robot.hear /(阪神|はんしん)/i, (msg) ->
     msg.send "阪神レースの結果です"
+
+  robot.hear /(東京|府中|とうきょう|ふちゅう)/i, (msg) ->
+    msg.send "東京レースの結果です"
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
